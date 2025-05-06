@@ -65,7 +65,7 @@ export default {
 				},
 				brand: {
 					beige: '#B8A375',
-					brown: '#2D2F2A',
+					brown: '#1A1C1B',
 				},
 			},
 			borderRadius: {
@@ -129,7 +129,7 @@ export default {
 				'scale-in': 'scale-in 0.5s ease-out forwards'
 			},
 			backgroundImage: {
-				'gradient-soft': 'linear-gradient(to bottom right, #B8A375, #E2D1C3)',
+				'gradient-soft': 'linear-gradient(to bottom right, #2D2F2A, #1E1F1C)',
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],

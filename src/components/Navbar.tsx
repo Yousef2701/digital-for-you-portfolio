@@ -26,38 +26,38 @@ const Navbar = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg shadow-black/10 py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <h1 className={`font-bold text-2xl ${isScrolled ? 'text-brand-brown' : 'text-brand-brown'}`}>
+          <h1 className="font-bold text-2xl text-brand-beige">
             Digital For You
           </h1>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/" className={`font-medium hover:text-brand-beige transition-colors text-gray-300`}>
             Home
           </Link>
-          <Link to="/about" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/about" className={`font-medium hover:text-brand-beige transition-colors text-gray-300`}>
             About
           </Link>
-          <Link to="/services" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/services" className={`font-medium hover:text-brand-beige transition-colors text-gray-300`}>
             Services
           </Link>
-          <Link to="/portfolio" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/portfolio" className={`font-medium hover:text-brand-beige transition-colors text-gray-300`}>
             Portfolio
           </Link>
-          <Button asChild variant={isScrolled ? "default" : "outline"} className={isScrolled ? "bg-brand-brown text-white hover:bg-brand-brown/90" : "border-brand-brown text-brand-brown hover:bg-brand-brown hover:text-white"}>
+          <Button asChild variant="outline" className="border-brand-beige text-brand-beige hover:bg-brand-beige hover:text-background">
             <Link to="/contact">Contact Us</Link>
           </Button>
         </nav>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-brand-brown" 
+          className="md:hidden text-brand-beige" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <Menu size={24} />
@@ -66,42 +66,42 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       <div 
-        className={`fixed top-[62px] left-0 right-0 bg-white shadow-md transition-all duration-300 overflow-hidden md:hidden ${
+        className={`fixed top-[62px] left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg transition-all duration-300 overflow-hidden md:hidden ${
           isMenuOpen ? 'max-h-64' : 'max-h-0'
         }`}
       >
         <div className="container py-4 flex flex-col space-y-4">
           <Link 
             to="/" 
-            className="font-medium text-gray-800 hover:text-brand-beige"
+            className="font-medium text-gray-300 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link 
             to="/about" 
-            className="font-medium text-gray-800 hover:text-brand-beige"
+            className="font-medium text-gray-300 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link 
             to="/services" 
-            className="font-medium text-gray-800 hover:text-brand-beige"
+            className="font-medium text-gray-300 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </Link>
           <Link 
             to="/portfolio" 
-            className="font-medium text-gray-800 hover:text-brand-beige"
+            className="font-medium text-gray-300 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Portfolio
           </Link>
           <Link 
             to="/contact" 
-            className="font-medium text-gray-800 hover:text-brand-beige"
+            className="font-medium text-gray-300 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
