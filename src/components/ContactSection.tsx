@@ -45,13 +45,13 @@ const ContactSection = () => {
   };
   
   return (
-    <section id="contact" className="py-20 bg-brand-beige" ref={ref}>
+    <section id="contact" className="py-20 bg-brand-beige/20" ref={ref}>
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className={`text-3xl md:text-4xl font-bold mb-4 text-brand-brown ${inView ? 'opacity-100 animate-fade-in' : 'opacity-0'}`}>
             Contact Us
           </h2>
-          <div className={`w-20 h-1 bg-brand-brown mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
+          <div className={`w-20 h-1 bg-brand-beige mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
           <p className={`text-lg text-gray-700 ${inView ? 'opacity-100 animate-fade-in animation-delay-300' : 'opacity-0'}`}>
             Have a project in mind or want to learn more about our services? Reach out to us today.
           </p>
@@ -124,7 +124,7 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <MapPin className="mr-4 text-brand-brown mt-1" size={24} />
+                <MapPin className="mr-4 text-brand-beige mt-1" size={24} />
                 <div>
                   <h4 className="font-semibold text-gray-800">Address</h4>
                   <p className="text-gray-600">123 Digital Avenue,<br />Marketing City, MC 10010</p>
@@ -132,7 +132,7 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start">
-                <Phone className="mr-4 text-brand-brown mt-1" size={24} />
+                <Phone className="mr-4 text-brand-beige mt-1" size={24} />
                 <div>
                   <h4 className="font-semibold text-gray-800">Phone</h4>
                   <p className="text-gray-600">+1 (555) 123-4567</p>
@@ -140,7 +140,7 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start">
-                <Mail className="mr-4 text-brand-brown mt-1" size={24} />
+                <Mail className="mr-4 text-brand-beige mt-1" size={24} />
                 <div>
                   <h4 className="font-semibold text-gray-800">Email</h4>
                   <p className="text-gray-600">hello@digitalforyou.com</p>

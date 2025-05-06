@@ -62,7 +62,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-gray-800 h-12">
-            Your <span className="text-brand-brown">{displayText}</span>
+            Your <span className="text-brand-beige">{displayText}</span>
             <span className="animate-pulse">|</span>
           </h2>
           

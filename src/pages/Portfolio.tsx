@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-32 pb-20 bg-brand-beige">
+      <div className="pt-32 pb-20 bg-brand-beige/20">
         <div className="container px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-brand-brown text-center mb-8 animate-fade-in">
             Our Portfolio

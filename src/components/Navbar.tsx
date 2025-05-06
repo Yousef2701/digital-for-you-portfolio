@@ -38,16 +38,16 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/" className={`font-medium hover:text-brand-brown transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             Home
           </Link>
-          <Link to="/about" className={`font-medium hover:text-brand-brown transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/about" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             About
           </Link>
-          <Link to="/services" className={`font-medium hover:text-brand-brown transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/services" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             Services
           </Link>
-          <Link to="/portfolio" className={`font-medium hover:text-brand-brown transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <Link to="/portfolio" className={`font-medium hover:text-brand-beige transition-colors ${isScrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             Portfolio
           </Link>
           <Button asChild variant={isScrolled ? "default" : "outline"} className={isScrolled ? "bg-brand-brown text-white hover:bg-brand-brown/90" : "border-brand-brown text-brand-brown hover:bg-brand-brown hover:text-white"}>
@@ -73,35 +73,35 @@ const Navbar = () => {
         <div className="container py-4 flex flex-col space-y-4">
           <Link 
             to="/" 
-            className="font-medium text-gray-800 hover:text-brand-brown"
+            className="font-medium text-gray-800 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link 
             to="/about" 
-            className="font-medium text-gray-800 hover:text-brand-brown"
+            className="font-medium text-gray-800 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link 
             to="/services" 
-            className="font-medium text-gray-800 hover:text-brand-brown"
+            className="font-medium text-gray-800 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </Link>
           <Link 
             to="/portfolio" 
-            className="font-medium text-gray-800 hover:text-brand-brown"
+            className="font-medium text-gray-800 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Portfolio
           </Link>
           <Link 
             to="/contact" 
-            className="font-medium text-gray-800 hover:text-brand-brown"
+            className="font-medium text-gray-800 hover:text-brand-beige"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact

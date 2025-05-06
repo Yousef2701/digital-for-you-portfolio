@@ -97,7 +97,7 @@ const PortfolioSection = () => {
           <h2 className={`text-3xl md:text-4xl font-bold mb-4 text-brand-brown ${inView ? 'opacity-100 animate-fade-in' : 'opacity-0'}`}>
             Our Portfolio
           </h2>
-          <div className={`w-20 h-1 bg-brand-brown mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
+          <div className={`w-20 h-1 bg-brand-beige mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
           <p className={`text-lg text-gray-700 ${inView ? 'opacity-100 animate-fade-in animation-delay-300' : 'opacity-0'}`}>
             Explore our latest projects and see how we've helped businesses achieve their digital goals.
           </p>
@@ -195,7 +195,7 @@ const PortfolioSection = () => {
                       <span className="font-medium text-gray-900">Services:</span>
                       <div className="flex flex-wrap gap-2 mt-2">
                         {selectedProject.services.map((service, idx) => (
-                          <span key={idx} className="bg-brand-beige text-brand-brown text-sm px-3 py-1 rounded-full">
+                          <span key={idx} className="bg-brand-beige/20 text-brand-brown text-sm px-3 py-1 rounded-full">
                             {service}
                           </span>
                         ))}
