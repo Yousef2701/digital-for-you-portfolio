@@ -55,7 +55,7 @@ const AboutSection = () => {
 
     return (
       <div className={`stats-item ${delay}`} ref={nodeRef}>
-        <div className="text-4xl font-bold text-brand-beige">{count}+</div>
+        <div className="text-4xl font-bold text-brand-brown">{count}+</div>
         <div className="text-gray-600">{label}</div>
       </div>
     );
@@ -68,7 +68,7 @@ const AboutSection = () => {
           <h2 className={`text-3xl md:text-4xl font-bold mb-4 text-brand-brown ${inView ? 'opacity-100 animate-fade-in' : 'opacity-0'}`}>
             About Digital For You
           </h2>
-          <div className={`w-20 h-1 bg-brand-beige mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
+          <div className={`w-20 h-1 bg-brand-brown mx-auto mb-8 ${inView ? 'opacity-100 animate-fade-in animation-delay-200' : 'opacity-0'}`}></div>
           <p className={`text-lg text-gray-700 ${inView ? 'opacity-100 animate-fade-in animation-delay-300' : 'opacity-0'}`}>
             Digital For You is a full-service marketing agency that specializes in creating impactful digital experiences 
             for businesses of all sizes. Our team of creative professionals is dedicated to bringing your vision to life 
@@ -92,7 +92,7 @@ const AboutSection = () => {
             </p>
           </div>
           
-          <div className={`bg-brand-beige/20 rounded-lg p-8 shadow-lg ${inView ? 'opacity-100 animate-scale-in animation-delay-400' : 'opacity-0'}`}>
+          <div className={`bg-brand-beige rounded-lg p-8 shadow-lg ${inView ? 'opacity-100 animate-scale-in animation-delay-400' : 'opacity-0'}`}>
             <h3 className="text-2xl font-semibold mb-6 text-center text-gray-900">Our Achievements</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
               {stats.map((stat, index) => (

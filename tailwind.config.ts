@@ -64,8 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					beige: '#B8A375',
-					brown: '#1A1C1B',
+					beige: '#F3EBD9',
+					brown: '#7C4B3A',
 				},
 			},
 			borderRadius: {
@@ -129,7 +129,7 @@ export default {
 				'scale-in': 'scale-in 0.5s ease-out forwards'
 			},
 			backgroundImage: {
-				'gradient-soft': 'linear-gradient(to bottom right, #2D2F2A, #1E1F1C)',
+				'gradient-soft': 'linear-gradient(to bottom right, #F3EBD9, #E2D1C3)',
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
