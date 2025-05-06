@@ -46,12 +46,14 @@ const Hero = () => {
   }, [currentTagline, displayText, isTyping]);
   
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-soft overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-cool-gradient overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -inset-[10px] opacity-30">
           {/* Abstract gradient shapes */}
-          <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-brand-brown/20 blur-3xl"></div>
-          <div className="absolute top-2/3 right-1/4 w-80 h-80 rounded-full bg-brand-brown/20 blur-3xl"></div>
+          <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-brand-beige/30 blur-3xl floating"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-brand-brown/20 blur-3xl floating animation-delay-200"></div>
+          <div className="absolute top-1/4 right-1/3 w-40 h-40 rounded-full bg-blue-200/30 blur-2xl pulse-slow"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-56 h-56 rounded-full bg-blue-100/30 blur-2xl pulse-slow animation-delay-300"></div>
         </div>
       </div>
       
@@ -71,10 +73,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animation-delay-300 opacity-0 animate-fade-in">
-            <Button asChild size="lg" className="bg-brand-brown text-white hover:bg-brand-brown/90 px-8">
+            <Button asChild size="lg" className="bg-brand-brown text-white hover:bg-brand-brown/90 px-8 hover:scale-105 transition-transform duration-300">
               <Link to="/portfolio">View Our Work</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-brand-brown text-brand-brown hover:bg-brand-brown hover:text-white px-8">
+            <Button asChild size="lg" variant="outline" className="border-brand-brown text-brand-brown hover:bg-brand-brown hover:text-white px-8 hover:scale-105 transition-transform duration-300">
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
@@ -83,7 +85,7 @@ const Hero = () => {
       
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animation-delay-500 opacity-0 animate-fade-in">
         <div 
-          className="animate-bounce cursor-pointer"
+          className="animate-bounce cursor-pointer hover:scale-110 transition-transform"
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight,
